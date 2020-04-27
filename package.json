@@ -1,0 +1,33 @@
+{
+  "name": "bumblebee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html",
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ],
+  "alias": {
+    "fs": "graceful-fs",
+    "sodium-native": "@geut/sodium-javascript-plus",
+    "sodium-universal": "@geut/sodium-javascript-plus",
+    "hyperswarm": "hyperswarm-web",
+    "util": "./node_modules/util/util.js"
+  },
+  "dependencies": {
+    "aframe": "^1.0.4",
+    "automerge": "^0.14.0",
+    "dat-sdk": "^2.0.0-6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "parcel": "^1.12.4"
+  }
+}
